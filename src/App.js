@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import classNames from 'classnames/bind';
+import styles from './App.css';
+const cx = classNames.bind(styles);
 
 console.log(styles);
+
 class App extends Component {
   render() {
     return (
-      <div className={styles.box}>
+      <div className={cx('box', 'blue')}>
+
       </div>
     );
   }
